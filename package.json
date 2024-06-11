@@ -1,0 +1,11 @@
+{
+  "name": "pokemon-search-app",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwind -i ./src/input.css -o ./public/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
