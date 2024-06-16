@@ -554,25 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
-.h-dvh {
-  height: 100dvh;
+.table {
+  display: table;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-fuchsia-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 121 249 / var(--tw-bg-opacity));
-}
-
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
+.uppercase {
+  text-transform: uppercase;
 }

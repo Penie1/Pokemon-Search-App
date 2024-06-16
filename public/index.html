@@ -8,5 +8,66 @@
 </head>
 <body>
 
+  <main>
+    <form id="search-form" >
+    <label for="search-input"></label>
+  <input id="search-input" required></input>
+  <button id="search-button" type="submit">Search</button>
+  </form>
+  <section id="output">
+   <div id='top-container'>
+  <div id="name_and_id">
+    <span id="pokemon-name" class="uppercase"></span>
+    <span id="pokemon-id"></span>
+   </div>
+  <div id="size">
+    <span id="weight"></span>
+    <span id="height"></span>
+  </div>
+   <div id="sprite-container"></div>
+ 
+  <div id="types"></div>
+  </div>
+  
+  <div id="bottom-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Base</th>
+            <th>Stats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hp:</td>
+             <td id="hp"></td>
+        </tr>
+        <tr> 
+          <td>Attack:</td>
+            <td id="attack"></td>
+         </tr>
+        <tr>
+           <td>Defense:</td>
+            <td id="defense"></td>
+        </tr>
+        <tr>
+           <td>Sp. Attack:</td>
+             <td id="special-attack"> 
+             </td>
+        </tr>
+        <tr>
+           <td>Sp. Defense:</td>
+             <td id="special-defense"></td>
+        </tr>
+        <tr>
+           <td>Speed:</td>
+             <td id="speed"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+</main>
 </body>
+<script src="main.js"></script>
 </html>
