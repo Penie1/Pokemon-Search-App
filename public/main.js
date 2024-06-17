@@ -30,7 +30,7 @@ const updateUI= (pokeData)=>{
 
 
  types.forEach(({type})=>{
-    let typesHTML= `<span class="type uppercase  ${type.name}">${type.name}</span>`;
+    let typesHTML= `<span class="type uppercase bg-blue-800 text-yellow-50 rounded-lg px-4  ${type.name}">${type.name}</span>`;
    pokeTypes.insertAdjacentHTML('afterbegin', typesHTML);
  
   })
@@ -52,7 +52,7 @@ const displayTopOutput=(pokeData)=>{
 const pokeImgUI=(img)=>{
     const {sprites}= img;
     const {front_default}= sprites;
-    const pokeImg = `<img id='sprite' src=${front_default}>` 
+    const pokeImg = `<img class="w-40" id='sprite' src=${front_default}>` 
     pokeImgContainer.insertAdjacentHTML('afterbegin',pokeImg)
 }
 
