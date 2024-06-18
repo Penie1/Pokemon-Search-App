@@ -6,22 +6,23 @@
     <title>Pokémon Search App</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-yellow-400 font-mono text-xl text-blue-900 px-3 pt-10">
+<body class="bg-yellow-400 font-mono text-xl text-blue-900 px-3 py-10 ">
 
-  <main class="grid grid-cols-2 w-full content-center justify-center">
-    <div class="h-52 w-52 "><img src="assets/logo/Pokémon_logo.png" alt=""></div>
-    <form id="search-form" >
-    <label for="search-input" class="mb-5 block">Search for Pokémon Name or ID:</label>
-  <input id="search-input" class="rounded-lg pl-2" required></input>
-  <button id="search-button" type="submit " class="bg-blue-900 text-yellow-100 px-7 rounded-lg">Search</button>
+  <main class="grid md:grid-cols-2 justify-center   gap-20">
+    <div class="md:h-52 md:w-52 "><img src="assets/logo/Pokémon_logo.png" alt="Pokemon logo"></div>
+    <form id="search-form"  class="justify-self-center ">
+    <label for="search-input" class="gap-10">Search for Pokémon Name or ID:</label>
+    <div class="flex  gap-3 flex-wrap  justify-center">
+  <input id="search-input" class="rounded-lg pl-2 h-8" required></input>
+  <button id="search-button" type="submit " class="bg-blue-900 text-yellow-100 px-7 rounded-lg">Search</button></div>
   </form>
-  <section id="output" class="grid grid-cols-2 col-span-2 justify-center">
-   <div id='top-container' class="justify-self-center" >
+  <section id="output" class="grid md:grid-cols-2 md:col-span-2 gap-10 ">
+   <div id='top-container' class="bg-white grid justify-center py-4 rounded-md min-h-56" >
   <div id="name_and_id">
     <span id="pokemon-name" class="uppercase"></span>
     <span id="pokemon-id"></span>
    </div>
-  <div id="size">
+  <div id="size" class="text-sm">
     <span id="weight"></span>
     <span id="height"></span>
   </div>
@@ -30,38 +31,38 @@
   <div id="types" class="flex gap-4"></div>
   </div>
   
-  <div id="bottom-container" class="justify-self-center">
-    <table>
+  <div id="bottom-container" class=" justify-self-center w-full grid max-w-96">
+    <table class="border-collapse text-center">
       <thead>
-        <tr>
-          <th>Base</th>
+        <tr class="border-solid border-2 border-white ">
+          <th class="border-x-2  border-white">Base</th>
             <th>Stats</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Hp:</td>
+        <tr class="border-solid border-2  border-white">
+          <td class="border-x-2  border-white">Hp:</td>
              <td id="hp"></td>
         </tr>
-        <tr> 
-          <td>Attack:</td>
+        <tr class="border-solid border-2  border-white"> 
+          <td class="border-x-2  border-white">Attack:</td>
             <td id="attack"></td>
          </tr>
-        <tr>
-           <td>Defense:</td>
+        <tr class="border-solid border-2  border-white">
+           <td class="border-x-2  border-white">Defense:</td>
             <td id="defense"></td>
         </tr>
-        <tr>
-           <td>Sp. Attack:</td>
+        <tr class="border-solid border-2  border-white">
+           <td class="border-x-2  border-white">Sp. Attack:</td>
              <td id="special-attack"> 
              </td>
         </tr>
-        <tr>
-           <td>Sp. Defense:</td>
+        <tr class="border-solid border-2  border-white">
+           <td class="border-x-2  border-white">Sp. Defense:</td>
              <td id="special-defense"></td>
         </tr>
-        <tr>
-           <td>Speed:</td>
+        <tr class="border-solid border-2  border-white">
+           <td class="border-x-2  border-white">Speed:</td>
              <td id="speed"></td>
         </tr>
       </tbody>

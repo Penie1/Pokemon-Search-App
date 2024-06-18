@@ -26,7 +26,9 @@ const updateUI= (pokeData)=>{
 
 
   const baseStats=stats.map(({base_stat,stat})=>{
-  document.getElementById(stat.name).textContent=base_stat})
+  document.getElementById(stat.name).textContent=base_stat;
+  
+})
 
 
  types.forEach(({type})=>{
