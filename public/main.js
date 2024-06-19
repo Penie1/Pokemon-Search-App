@@ -12,10 +12,21 @@ const pokeTypes = document.getElementById('types');
 searchForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   const {value} = searchInput;
-  const response = fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${value.toLowerCase()}`);
-  response.then(e=>e.json()).then(data=>updateUI(data)).catch(()=>alert("Pokémon not found"));
+ const inputToLowerCase= value.toLowerCase();
+ fetchPokeData(inputToLowerCase);
 
 })
+
+async function fetchPokeData (data){
+  try {
+  const response = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${data}`);
+  const pokeData = await response.json();
+  updateUI(pokeData)
+  } catch (e) {
+    alert(`Pokémon not found`);
+  }
+
+}
 
 
 const updateUI= (pokeData)=>{
